@@ -1,0 +1,38 @@
+### POST /users - Create a new user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Musharaf",
+  "email": "john@example.com",
+  "age": 30
+}
+
+### GET /users - Get all users
+POST http://localhost:8000/api/v2/user/login-user
+Content-Type: application/json
+
+{
+  "email": "saifuddin.md.er@gmail.com",
+  "password": "dakejfglaef",
+}
+
+### GET /users/:id - Get a user by ID
+GET http://localhost:3000/users/64be06afc48f1aad77dee25e
+
+### PUT /users/:id - Update a user by ID
+PUT http://localhost:3000/users/64be06afc48f1aad77dee25e
+Content-Type: application/json
+
+{
+  "name": "Updated User",
+  "email": "updated@example.com",
+  "age": 35
+}
+
+### DELETE /users/:id - Delete a user by ID
+DELETE http://localhost:8000/api/v2/product/delete-shop-product/64c79a288341cfb4dbe9b97d
+
+// Delete product of a shop
+# id = 64c79a288341cfb4dbe9b97d
+DELETE http://localhost:8000/api/v2/product/delete-shop-product/64c79a288341cfb4dbe9b97d
