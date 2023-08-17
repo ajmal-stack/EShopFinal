@@ -16,8 +16,7 @@ import { useSelector } from "react-redux";
 import Cart from "../cart/Cart";
 import Wishlist from "../Wishlist/Wishlist";
 import { RxCross1 } from "react-icons/rx";
-// import HeaderLogo from "../../..//public/";
-
+// import headerlogo from "../../Assests/animations/"
 const Header = ({ activeHeading }) => {
   const { isAuthenticated, user } = useSelector((state) => state.user);
   const { isSeller } = useSelector((state) => state.seller);
@@ -56,11 +55,12 @@ const Header = ({ activeHeading }) => {
     <>
       <div className={`${styles.section}`}>
         <div className="hidden 800px:h-[50px] 800px:my-[20px] 800px:flex items-center justify-between">
-          <div>
+          <div className="w-[20%]">
             <Link to="/">
               <img
                 // src="../../Assests/animations/Orange Modern Outline Shopping Center Cart Logo.png"
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+                src={require("../../Assests/animations/images/headerLogo.png")}
+                // src="https://shopo.quomodothemes.website/assets/images/logo.svg"
                 alt=""
               />
             </Link>

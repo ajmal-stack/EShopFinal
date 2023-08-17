@@ -11,7 +11,7 @@ router.post(
       amount: req.body.amount,
       currency: "inr",
       metadata: {
-        company: "Becodemy",
+        company: "Ajmal",
       },
     });
     res.status(200).json({
@@ -28,5 +28,21 @@ router.get(
   })
 );
 
+// /* import checksum generation utility */
+// var PaytmChecksum = require("./PaytmChecksum");
+
+// paytmChecksum = request.body.CHECKSUMHASH;
+// delete request.body.CHECKSUMHASH;
+
+// var isVerifySignature = PaytmChecksum.verifySignature(
+//   request.body,
+//   config.PAYTM_MERCHANT_KEY,
+//   paytmChecksum
+// );
+// if (isVerifySignature) {
+//   console.log("Checksum Matched");
+// } else {
+//   console.log("Checksum Mismatched");
+// }
 
 module.exports = router;
